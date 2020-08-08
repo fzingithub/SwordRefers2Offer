@@ -17,9 +17,11 @@ class Solution:
 class Solution1:
     def Sum_Solution(self, n):
         # write code here
-        return n + (n and self.Sum_Solution(n-1))
+        return n and n+self.Sum_Solution(n-1)
         
 
 if __name__ == '__main__':
     test = Solution1()
     res = test.Sum_Solution(5)
+
+    print(res)

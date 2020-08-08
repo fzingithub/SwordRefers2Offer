@@ -22,7 +22,7 @@ class Solution:
         self.charDict[char] = 1 if char not in self.charDict else self.charDict[char]+1
         
         
-# python2 dict 无序
+# python2 dict 全无序
 class Solution1:
     # 返回对应char
     charDict = {}

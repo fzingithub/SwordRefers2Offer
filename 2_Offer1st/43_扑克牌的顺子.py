@@ -27,3 +27,4 @@ class Solution:
 if __name__ == '__main__':
     test = Solution()
     res = test.IsContinuous([0, 1, 3, 5, 4])
+    print(res)

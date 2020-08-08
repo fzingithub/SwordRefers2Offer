@@ -8,7 +8,7 @@ Created on Tue Mar 26 10:15:14 2019
 class Solution:
     def movingCount(self, threshold, rows, cols):
         # write code here
-        matrix = matrix = [[False for i in range(cols)] for j in range(rows)]
+        matrix = [[False for i in range(cols)] for j in range(rows)]
         count = self.findGrid(threshold, rows, cols, matrix, 0, 0)
         return count
     

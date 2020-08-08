@@ -59,4 +59,6 @@ class Solution2:
 if __name__ == '__main__':
     test = Solution2()
     
-    result = test.NumberOf1Between1AndN_Solution(123456789)
+    result = test.NumberOf1Between1AndN_Solution(1000)
+
+    print(result)
