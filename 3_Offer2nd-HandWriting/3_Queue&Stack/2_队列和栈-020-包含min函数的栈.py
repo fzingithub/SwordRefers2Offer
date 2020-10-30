@@ -1,5 +1,5 @@
 class MinStack:
-    # 添加辅助栈，为了O(1)求最小值
+    # 添加辅助栈，为了O(1_最短回文串.py)求最小值
     def __init__(self):
         """
         initialize your data structure here.

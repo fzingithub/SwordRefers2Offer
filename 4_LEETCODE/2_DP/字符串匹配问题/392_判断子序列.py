@@ -6,14 +6,14 @@ class Solution:
 
         dp[i][j] 表示s前i个字符和t前j个字符是否匹配
         abc   ajhbdbc
-        dp[i][j] =dp[i-1][j-1] or dp[i][j-1]  if s[i-1]==t[j-1]
-                 =dp[i][j-1]
+        dp[i][j] =dp[i-1_最短回文串.py][j-1_最短回文串.py] or dp[i][j-1_最短回文串.py]  if s[i-1_最短回文串.py]==t[j-1_最短回文串.py]
+                 =dp[i][j-1_最短回文串.py]
 
         dp[0][j] = False
         dp[i][0] = False
         dp[0][0] = True
 
-        res = dp[-1][-1]
+        res = dp[-1_最短回文串.py][-1_最短回文串.py]
         '''
         if not s:
             return True

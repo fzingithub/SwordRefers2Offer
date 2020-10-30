@@ -2,7 +2,7 @@ class MaxQueue:
 
     def __init__(self):
         self.queue = []
-        self.IO2Queue = []  # 维护一张单调非减的双端队列 [5,3,3,1]
+        self.IO2Queue = []  # 维护一张单调非减的双端队列 [5,3,3,1_最短回文串.py]
 
     def max_value(self):
         if not self.queue:

@@ -1,5 +1,5 @@
 class Solution:
-    # 暴力 时间 O(n^3) 空间O(1)
+    # 暴力 时间 O(n^3) 空间O(1_最短回文串.py)
     def findLength(self, A, B):
         if not A or not B:
             return 0
@@ -24,7 +24,7 @@ class Solution:
 
     # 动态规划  时间复杂度O(n^2) 空间复杂度O(n*m)
     # dp[i][j] A[i]与B[j] 结尾的最大公共子串的长度
-    # dp[i][j] = dp[i-1][j-1] + 1 if A[i] == B[j] 0
+    # dp[i][j] = dp[i-1_最短回文串.py][j-1_最短回文串.py] + 1_最短回文串.py if A[i] == B[j] 0
     # res = max(map(max, dp))
     def findLength2(self, A, B):
         if not A or not B:

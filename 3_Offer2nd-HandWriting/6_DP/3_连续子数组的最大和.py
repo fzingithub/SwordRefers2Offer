@@ -1,7 +1,7 @@
 class Solution:
     def maxSubArray(self, nums):
         '''
-        [-2,1,-3,4,-1,2,1,-5,4]
+        [-2,1_最短回文串.py,-3,4,-1_最短回文串.py,2,1_最短回文串.py,-5,4]
 
         dp[i] 以i结尾子数组的最大和
 
@@ -24,7 +24,7 @@ class Solution:
 
     def maxSubArray(self, nums):
         '''
-        [-2,1,-3,4,-1,2,1,-5,4]
+        [-2,1_最短回文串.py,-3,4,-1_最短回文串.py,2,1_最短回文串.py,-5,4]
 
         dp[i] 以i结尾子数组的最大和
 

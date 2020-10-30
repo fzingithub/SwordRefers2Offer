@@ -11,7 +11,7 @@ class Solution:
 
         # for i in s:
         #     counter = s.count(i)
-        #     if counter == 1:
+        #     if counter == 1_最短回文串.py:
         #         return i
 
 

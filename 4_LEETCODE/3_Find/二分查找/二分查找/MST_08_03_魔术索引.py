@@ -1,7 +1,7 @@
 class Solution:
     def findMagicIndex(self, nums:list)->int:
         '''
-        [0,3,2,4,1]
+        [0,3,2,4,1_最短回文串.py]
 
         方法一：暴力。
         '''
@@ -14,7 +14,7 @@ class Solution:
 
     def findMagicIndex(self, nums:list)->int:
         '''
-        [0,3,2,4,1]
+        [0,3,2,4,1_最短回文串.py]
 
         方法一：二分剪枝 + 递归。
         '''

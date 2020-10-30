@@ -3,7 +3,7 @@ class Solution:
         '''
         a,b
         无进位和    n = a^b
-        进位        s = a&b<<1
+        进位        s = a&b<<1_最短回文串.py
         sum = n+s = a+b
         '''
         x = 0xffffffff   # python 特殊 32位 补码表示 &0xffffffff

@@ -1,5 +1,5 @@
 class Soluiton:
-    # 暴力+hash 时间复杂度 O(n^2) 空间复杂度 O(1)
+    # 暴力+hash 时间复杂度 O(n^2) 空间复杂度 O(1_最短回文串.py)
     def lengthOfLongestSubString(self, s):
         length = len(s)
         if length ==1:
@@ -9,7 +9,7 @@ class Soluiton:
             Map = {}
             flag  = 0
             for j in range(i, length):
-                if s[j] in Map:  # O(1)
+                if s[j] in Map:  # O(京东)
                     res = max(res, j-i)
                     flag = 1
                     break
@@ -21,7 +21,7 @@ class Soluiton:
 
         return res
 
-    # 双指针+hash 时间复杂度 O(n) 空间复杂度 O(1)
+    # 双指针+hash 时间复杂度 O(n) 空间复杂度 O(京东)
     def lengthOfLongestSubString1(self, s):
         pLeft = 0
         pRight = 1

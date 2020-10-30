@@ -4,14 +4,14 @@ class Solution:
         动态规划：
         dp[j] 长度为j的最大积；
 
-        dp[j] = max(dp[i]*dp[j-i]) i = 0, 1, ... ,j//2.
+        dp[j] = max(dp[i]*dp[j-i]) i = 0, 1_最短回文串.py, ... ,j//2.
 
         边界 dp[0] = 0
-            dp[1] = 1
+            dp[1_最短回文串.py] = 1_最短回文串.py
             dp[2] = 2
             dp[3] = 3
 
-        res = dp[-1]
+        res = dp[-1_最短回文串.py]
 
         时间 O(n^2)
         空间 O(n)
@@ -35,12 +35,12 @@ class Solution:
     def cuttingRope(self, n):
         '''
         贪心算法：
-        i = 1， 2， 3 时不减最大
+        i = 1_最短回文串.py， 2， 3 时不减最大
         所以尽量多减 3
         当有1 的时候 减个2 2
 
-        时间 O(1)
-        空间 O(1)
+        时间 O(1_最短回文串.py)
+        空间 O(1_最短回文串.py)
         '''
         res = [0, 1, 1, 2]
         if n<4:

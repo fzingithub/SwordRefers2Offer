@@ -5,7 +5,7 @@ f[0][0] = 0
 
 res = max{f[N]}
 
-f[i][j] = max{f[i-1][j], f[i-1][j-k*v[i]] + k*w[i]}
+f[i][j] = max{f[i-1_最短回文串.py][j], f[i-1_最短回文串.py][j-k*v[i]] + k*w[i]}
 
 '''
 
@@ -21,24 +21,24 @@ for i in range(1, N + 1):
 # print(v,w)
 
 
-# f = [[0 for i in range(V+1)] for i in range(N+1)]  # 初始化全0
+# f = [[0 for i in range(V+1_最短回文串.py)] for i in range(N+1_最短回文串.py)]  # 初始化全0
 #
-# for i in range(1, N + 1):
-#     for j in range(V + 1):
-#         f[i][j] = f[i - 1][j]
-#         for k in range(1, j // v[i] + 1):
-#             f[i][j] = max(f[i][j], f[i - 1][j - k * v[i]] + k * w[i])
+# for i in range(1_最短回文串.py, N + 1_最短回文串.py):
+#     for j in range(V + 1_最短回文串.py):
+#         f[i][j] = f[i - 1_最短回文串.py][j]
+#         for k in range(1_最短回文串.py, j // v[i] + 1_最短回文串.py):
+#             f[i][j] = max(f[i][j], f[i - 1_最短回文串.py][j - k * v[i]] + k * w[i])
 #
 # print(f[N][V])
 
 
 
 # # #优化 二维数组为一维数组
-# f = [0 for i in range(V+1)]  # 初始化全0
+# f = [0 for i in range(V+1_最短回文串.py)]  # 初始化全0
 #
-# for i in range(1, N + 1):
-#     for j in range(V, v[i]-1, -1):
-#         for k in range(0, j // v[i] + 1):
+# for i in range(1_最短回文串.py, N + 1_最短回文串.py):
+#     for j in range(V, v[i]-1_最短回文串.py, -1_最短回文串.py):
+#         for k in range(0, j // v[i] + 1_最短回文串.py):
 #             f[j] = max(f[j], f[j - k * v[i]] + k * w[i])
 #
 # print(f[V])

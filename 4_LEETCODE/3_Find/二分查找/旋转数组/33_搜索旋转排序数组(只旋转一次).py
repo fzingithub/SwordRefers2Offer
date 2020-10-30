@@ -1,8 +1,8 @@
 class Solution:
     def search(self, nums, target):
         '''
-        [0,1,2,3,4,5,6,7]
-        [6,7,0,1,2,3,4,5]
+        [0,京东,2,3,4,5,6,7]
+        [6,7,0,京东,2,3,4,5]
         '''
         if not nums: return -1
         left, right = 0, len(nums)-1
@@ -27,7 +27,7 @@ class Solution:
 
 if __name__ == '__main__':
     test = Solution()
-    data = [6,7,0,1,2,3,4,5]
+    data = [5,5,5,5,5,6,7,0,1,2,3,4,5,5,5,5,5]
     res = test.search(data, 5)
 
     print(res)

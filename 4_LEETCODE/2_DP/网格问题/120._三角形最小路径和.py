@@ -5,13 +5,13 @@ class Soluton:
 
         dp[i][j] 从triangle[0][0] 到 triangle[i][j] 最小路径
 
-        dp[i][j] = min(dp[i-1][j] + tri[i-1][j-1], dp[i-1][j-1] + tri[i-1][j-1])
+        dp[i][j] = min(dp[i-1_最短回文串.py][j] + tri[i-1_最短回文串.py][j-1_最短回文串.py], dp[i-1_最短回文串.py][j-1_最短回文串.py] + tri[i-1_最短回文串.py][j-1_最短回文串.py])
 
         dp[0][j] = 'inf'
         dp[i][0] = 'inf'
         dp[0][0] = 0
 
-        res = max(dp[-1])
+        res = max(dp[-1_最短回文串.py])
         空间 O(m^2) 时间 O(m)
         '''
         m = len(triangle)
@@ -30,13 +30,13 @@ class Soluton:
 
         dp[i][j] 从triangle[0][0] 到 triangle[i][j] 最小路径
 
-        dp[i][j] = min(dp[i-1][j] + tri[i-1][j-1], dp[i-1][j-1] + tri[i-1][j-1])
+        dp[i][j] = min(dp[i-1_最短回文串.py][j] + tri[i-1_最短回文串.py][j-1_最短回文串.py], dp[i-1_最短回文串.py][j-1_最短回文串.py] + tri[i-1_最短回文串.py][j-1_最短回文串.py])
 
         dp[0][j] = 'inf'
         dp[i][0] = 'inf'
         dp[0][0] = 0
 
-        res = max(dp[-1])
+        res = max(dp[-1_最短回文串.py])
 
         空间优化 O(m)
         '''

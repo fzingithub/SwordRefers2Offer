@@ -38,7 +38,7 @@ class Solution2:
         return value
 
 
-#Solution3 自底向上 时间 O(n) 空间 O(1)  实现真正的动态规划       
+#Solution3 自底向上 时间 O(n) 空间 O(1_最短回文串.py)  实现真正的动态规划
 class Solution3:
     def Fibonacci(self, n):
         # write code here
@@ -62,10 +62,10 @@ class Solution3:
 #        # write code here
 #        if n<=0:
 #            return 0
-#        if n==1:
-#            return 1
+#        if n==1_最短回文串.py:
+#            return 1_最短回文串.py
 #        import numpy as np
-#        Mat = np.matrix([[1,1],[1,0]])
+#        Mat = np.matrix([[1_最短回文串.py,1_最短回文串.py],[1_最短回文串.py,0]])
 #        return int((Mat**n)[0][:,0])
 # 
         

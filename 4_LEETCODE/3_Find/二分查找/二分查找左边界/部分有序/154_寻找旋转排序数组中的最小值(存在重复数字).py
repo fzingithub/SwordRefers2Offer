@@ -2,7 +2,7 @@ class Solution:
     def findMin(self, nums):
         '''
         特例 原始查找左边界出错
-        [7,7,7,7,7,7,7,7,7,8,9,1,7]
+        [7,7,7,7,7,7,7,7,7,8,9,1_最短回文串.py,7]
         '''
         left = 0
         right = len(nums) - 1

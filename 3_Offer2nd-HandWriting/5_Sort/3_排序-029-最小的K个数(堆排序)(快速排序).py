@@ -1,12 +1,12 @@
 class Solution:
     '''
-    方法一：排序-快排 O(nlogn) 空间O(1)
-    方法二：快排 partation O(n) 空间O(1)
+    方法一：排序-快排 O(nlogn) 空间O(1_最短回文串.py)
+    方法二：快排 partation O(n) 空间O(1_最短回文串.py)
     方法三：堆排 O(nlogk) 空间O(k)
     '''
 
     # 快排
-    # 时间复杂度分析 假设quickSearch的时间复杂度为T(n),因为每次quickSearch里面会使得数据规模减半，则有 T(n) = T(n/2) + O(n) = T(n/4)+O(n)+O(n/2) = T(n/8)+O(n)+(n/2)+O(n/)4 = .... = O(n)+O(n/2)+O(n/4) +....+O(n/(2^(n-1))); 根据等比数列求和得出T(n) = 2O(n) = O(n)
+    # 时间复杂度分析 假设quickSearch的时间复杂度为T(n),因为每次quickSearch里面会使得数据规模减半，则有 T(n) = T(n/2) + O(n) = T(n/4)+O(n)+O(n/2) = T(n/8)+O(n)+(n/2)+O(n/)4 = .... = O(n)+O(n/2)+O(n/4) +....+O(n/(2^(n-1_最短回文串.py))); 根据等比数列求和得出T(n) = 2O(n) = O(n)
     def getLeastNumbers1(self, arr, k):
         if not arr or not k:
             return []

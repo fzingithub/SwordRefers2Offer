@@ -24,7 +24,7 @@ class Solution:
         return L[0]
     
     
-#解法二： 约瑟夫环的通用解法  时间，O(n)  空间，O(1])
+#解法二： 约瑟夫环的通用解法  时间，O(n)  空间，O(1_最短回文串.py])
 class Solution1:
     def LastRemaining_Solution(self, n, m):
         # write code here

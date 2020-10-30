@@ -7,7 +7,7 @@ Created on Wed Jan 23 13:58:10 2019
 E-mail: 1194585271@qq.com
 """
 
-#Solution1 最快 O(n^2) 的算法  => n(n-1)/2 个数组求和
+#Solution1 最快 O(n^2) 的算法  => n(n-1_最短回文串.py)/2 个数组求和
 class Solution1:
     def FindGreatestSumOfSubArray(self, array):
         # write code here

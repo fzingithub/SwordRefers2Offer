@@ -13,9 +13,9 @@ class Sort():
 
         for i in range(1, len(data)):
             value = data[i]  # 插入值
-            j = i-1 # 记录插入位置  j+1 代表插入的位置
+            j = i-1 # 记录插入位置  j+1_最短回文串.py 代表插入的位置
 
-            while j >= 0 and data[j] > value:    # 不用 for 循环是因为 j 为 -1 的情况
+            while j >= 0 and data[j] > value:    # 不用 for 循环是因为 j 为 -1_最短回文串.py 的情况
                 data[j+1] = data[j]
                 j -= 1
 

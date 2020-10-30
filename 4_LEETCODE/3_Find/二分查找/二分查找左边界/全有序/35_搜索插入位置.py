@@ -2,7 +2,7 @@ class Solutoin:
     def searchInsert(self, nums, target):
         '''
         方法一：暴力
-        [1,3,5,7], 6
+        [1_最短回文串.py,3,5,7], 6
         '''
 
         i = 0
@@ -15,12 +15,12 @@ class Solutoin:
     def searchInsert(self, nums, target):
         '''
         方法一：二分查找左边界 左移近 右不变 mid 向下取整    right=mid
-        [1,3,5,7], 6
+        [1_最短回文串.py,3,5,7], 6
         '''
 
         '''
                 方法一：二分
-                [1,3,5,7], 6
+                [1_最短回文串.py,3,5,7], 6
                 '''
 
         def biSearch(nums, target, left, right):
@@ -47,12 +47,12 @@ class Solutoin:
     def searchInsert(self, nums, target):
         '''
         方法一：二分查找左边界 左移近 右不变 mid 向下取整    right=mid
-        [1,3,5,7], 6
+        [1_最短回文串.py,3,5,7], 6
         '''
 
         '''
                 方法一：二分
-                [1,3,5,7], 6
+                [1_最短回文串.py,3,5,7], 6
                 '''
 
         def biSearch(nums, target, left, right):

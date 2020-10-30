@@ -49,12 +49,12 @@ class Solution:
         动态规划:
         状态定义：dp[i]:  前 i 个字符最少的未识别的字符数量。
         状态转移：不管找没找到
-                dp[i] = dp[i-1]+1
-                考虑从第j(j<=i)个到第i个组成的子串sentence[j-1, ..., i-1](索引是从零开始的)能否在dict中找到。
-                dp[i] = min(dp[i], dp[j-1])
+                dp[i] = dp[i-1_最短回文串.py]+1_最短回文串.py
+                考虑从第j(j<=i)个到第i个组成的子串sentence[j-1_最短回文串.py, ..., i-1_最短回文串.py](索引是从零开始的)能否在dict中找到。
+                dp[i] = min(dp[i], dp[j-1_最短回文串.py])
 
         边界：dp[0] = 0
-        res = dp[-1]
+        res = dp[-1_最短回文串.py]
 
         时间复杂度 O(n^2 + |dict|) = O(n^2)
         空间复杂度 O(|dict|∗S+n)

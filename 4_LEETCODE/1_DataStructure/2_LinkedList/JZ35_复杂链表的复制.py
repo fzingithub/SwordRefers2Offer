@@ -8,7 +8,7 @@ class Solution:
     def copyRandomList(self, head: 'Node') -> 'Node':
         '''
         三步走：
-        1. 复制节点；
+        1_最短回文串.py. 复制节点；
         2. 复制指针；
         3. 奇偶拆分
         '''

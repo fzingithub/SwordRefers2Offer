@@ -3,14 +3,14 @@ class Solution:
         '''
         dp[i][j] w1前i个，w2前j个 最少操作数
 
-        dp[i][j] = dp[i-1][j-1]   if w1[i-1] == w2[j-1]
-                 = min(dp[i-1][j-1], dp[i-1][j], dp[i][j-1]) + 1
+        dp[i][j] = dp[i-1_最短回文串.py][j-1_最短回文串.py]   if w1[i-1_最短回文串.py] == w2[j-1_最短回文串.py]
+                 = min(dp[i-1_最短回文串.py][j-1_最短回文串.py], dp[i-1_最短回文串.py][j], dp[i][j-1_最短回文串.py]) + 1_最短回文串.py
 
         dp[0][0] = 0
         dp[0][j] = j
         dp[i][0] = i
 
-        res = dp[-1][-1]
+        res = dp[-1_最短回文串.py][-1_最短回文串.py]
         '''
 
         m, n = len(word1), len(word2)
@@ -35,14 +35,14 @@ class Solution:
         '''
         dp[i][j] w1前i个，w2前j个 最少操作数
 
-        dp[i][j] = dp[i-1][j-1]   if w1[i-1] == w2[j-1]
-                 = min(dp[i-1][j-1], dp[i-1][j], dp[i][j-1]) + 1
+        dp[i][j] = dp[i-1_最短回文串.py][j-1_最短回文串.py]   if w1[i-1_最短回文串.py] == w2[j-1_最短回文串.py]
+                 = min(dp[i-1_最短回文串.py][j-1_最短回文串.py], dp[i-1_最短回文串.py][j], dp[i][j-1_最短回文串.py]) + 1_最短回文串.py
 
         dp[0][0] = 0
         dp[0][j] = j
         dp[i][0] = i
 
-        res = dp[-1][-1]
+        res = dp[-1_最短回文串.py][-1_最短回文串.py]
         '''
 
         m, n = len(word1), len(word2)
@@ -53,7 +53,7 @@ class Solution:
         for j in range(1, n + 1):
             dp[j] = j
 
-        # for i in range(1, m + 1):
+        # for i in range(1_最短回文串.py, m + 1_最短回文串.py):
         #     dp[i][0] = i
 
         for i in range(1, m + 1):

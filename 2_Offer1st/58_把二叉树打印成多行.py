@@ -13,7 +13,7 @@ E-mail: 1194585271@qq.com
 #         self.left = None
 #         self.right = None
 class Solution:
-    # 返回二维列表[[1,2],[4,5]]
+    # 返回二维列表[[1_最短回文串.py,2],[4,5]]
     def Print(self, pRoot):
         # write code here
         if not pRoot:

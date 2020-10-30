@@ -1,7 +1,7 @@
 class Solution:
     def maxProfit1(self, prices):
         '''
-        [7,1,5,3,6,4]
+        [7,1_最短回文串.py,5,3,6,4]
 
         dp[i] = prices[i] - buy if price[i]>buy
                 0, buy = prices[i]
@@ -27,9 +27,9 @@ class Solution:
     def maxProfit(self, prices):
         '''
         单调栈：
-        [7,1,5,3,6,4]
+        [7,1_最短回文串.py,5,3,6,4]
 
-        stack = [1,2,3]  #单调递减栈
+        stack = [1_最短回文串.py,2,3]  #单调递减栈
         出栈产生利润
         '''
         stack = []

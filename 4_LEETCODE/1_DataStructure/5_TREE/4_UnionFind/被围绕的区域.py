@@ -72,7 +72,7 @@ class Solution:
                             ufs.union(i * n + (j-1), i*n+j)
                         if board[i][j+1] == 'O':
                             ufs.union(i * n + (j+1), i*n+j)
-            print(ufs.father_dict)
+            # print(ufs.father_dict)
 
         for i in range(m):
             for j in range(n):
@@ -86,6 +86,7 @@ class Solution:
 
 
 
-test = Solution()
-
-test.solve([["O","X","X","O","X"],["X","O","O","X","O"],["X","O","X","O","X"],["O","X","O","O","O"],["X","X","O","X","O"]])
+if __name__ == '__main__':
+    test = Solution()
+    grid = [["O","X","X","O","X"],["X","O","O","X","O"],["X","O","X","O","X"],["O","X","O","O","O"],["X","X","O","X","O"]]
+    test.solve(grid)

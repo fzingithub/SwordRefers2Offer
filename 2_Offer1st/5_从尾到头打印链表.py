@@ -13,7 +13,7 @@ E-mail: 1194585271@qq.com
 #         self.next = None
 
 class Solution:
-    # 返回从尾部到头部的列表值序列，例如[1,2,3]
+    # 返回从尾部到头部的列表值序列，例如[1_最短回文串.py,2,3]
     def printListFromTailToHead(self, listNode):
         # write code here
         result = []

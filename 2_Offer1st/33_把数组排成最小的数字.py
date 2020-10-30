@@ -12,7 +12,7 @@ class Solution1:
     def PrintMinNumber(self, numbers):
         # write code here
         '''
-        1、首先 numbers 是一个 set 集合,需要将其转换为 列表进行排序    sorted(list(data)))
+        1_最短回文串.py、首先 numbers 是一个 set 集合,需要将其转换为 列表进行排序    sorted(list(data)))
         2、然后通过python的内置库 itertools.permutations   进行排列组合
         3、将排列组合出来的数先转为字符串
         4、然后通过 join 将其组合成一个字符串
@@ -62,10 +62,10 @@ class Solution2:
 class Solution3:
     def PrintMinNumber(self, numbers):
         # write code here
-        from functools import cmp_to_key    #将cmp转成key值  [-1,0,1]
+        from functools import cmp_to_key    #将cmp转成key值  [-1_最短回文串.py,0,1_最短回文串.py]
         if not numbers: return ""
         numbers = list(map(str, numbers))
-        numbers.sort(key=cmp_to_key(lambda x,y: int(x+y)-int(y+x))) #key=[-1,0,1]
+        numbers.sort(key=cmp_to_key(lambda x,y: int(x+y)-int(y+x))) #key=[-1_最短回文串.py,0,1_最短回文串.py]
         return "".join(numbers).lstrip('0') or '0'   #join 字符串用 ’‘ 连接函数 ；lstrip 移去串首的空白字符     
     
 if __name__ == '__main__':

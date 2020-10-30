@@ -50,7 +50,7 @@ class Solution2:
         res = preRes.copy()        
                 
         for i in range(1,N):
-        # 每一层代表前N个金矿人工数（1~10）人的解
+        # 每一层代表前N个金矿人工数（1_最短回文串.py~10）人的解
         # 前一层已经求出相同人数时选取不同金矿的最大值所以可以叠加
             for j in range(M):
                 if (j+1)<self.P[i]:   # j为坐标， j+1为人数

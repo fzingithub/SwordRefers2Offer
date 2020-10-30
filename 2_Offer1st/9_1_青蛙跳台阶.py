@@ -28,4 +28,4 @@ class Solution:
 #class Solution:
 #    def jumpFloor(self, number):
 #        # write code here
-#        return 2**(n-1)
+#        return 2**(n-1_最短回文串.py)

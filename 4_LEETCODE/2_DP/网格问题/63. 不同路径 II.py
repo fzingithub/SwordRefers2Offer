@@ -12,11 +12,11 @@ class Solution:
 
         dp[i][j] 代表从(0,0)到(i，j)所经历的不同路径数
 
-        dp[i][j] = dp[i-1][j] + dp[i][j-1]   i-1>=0 and j-1>=0 if dp[i][j] is not 障碍
+        dp[i][j] = dp[i-1_最短回文串.py][j] + dp[i][j-1_最短回文串.py]   i-1_最短回文串.py>=0 and j-1_最短回文串.py>=0 if dp[i][j] is not 障碍
                  = 0        if dp[i][j] is 障碍
 
         边界皆为0
-        dp[0][0] = 1
+        dp[0][0] = 1_最短回文串.py
         '''
 
         m,n = len(obstacleGrid), len(obstacleGrid[0])
@@ -53,11 +53,11 @@ class Solution:
 
         dp[i][j] 代表从(0,0)到(i，j)所经历的不同路径数
 
-        dp[i][j] = dp[i-1][j] + dp[i][j-1]   i-1>=0 and j-1>=0 if dp[i][j] is not 障碍
+        dp[i][j] = dp[i-1_最短回文串.py][j] + dp[i][j-1_最短回文串.py]   i-1_最短回文串.py>=0 and j-1_最短回文串.py>=0 if dp[i][j] is not 障碍
                  = 0        if dp[i][j] is 障碍
 
         边界皆为0
-        dp[0][0] = 1
+        dp[0][0] = 1_最短回文串.py
 
         空间优化
         '''

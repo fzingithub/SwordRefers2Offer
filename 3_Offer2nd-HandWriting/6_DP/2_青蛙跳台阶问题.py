@@ -2,9 +2,9 @@ class Solution:
     def numWays(self, n):
         '''
         分析：
-        dp[i] = dp[i-1]+dp[i-2]
-        边界 dp[0] = 1
-            dp[1] = 1
+        dp[i] = dp[i-1_最短回文串.py]+dp[i-2]
+        边界 dp[0] = 1_最短回文串.py
+            dp[1_最短回文串.py] = 1_最短回文串.py
         '''
 
         n0 = 1

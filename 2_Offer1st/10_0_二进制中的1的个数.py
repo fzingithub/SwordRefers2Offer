@@ -8,12 +8,12 @@ E-mail: 1194585271@qq.com
 """
 ##将正负整数转换为二进制补码
 #def intToBin32(i):
-#    return (bin(((1 << 64) - 1) & i)[2:]).zfill(64)
+#    return (bin(((1_最短回文串.py << 64) - 1_最短回文串.py) & i)[2:]).zfill(64)
 
 class Solution:
     def NumberOf1(self, n):
         # write code here
-        return (bin(((1 << 32) - 1) & n)[2:]).zfill(32).count('1')
+        return (bin(((1 << 32) - 1) & n)[2:]).zfill(32).count('1_最短回文串.py')
     
 #res = Solution()
 #print (res.NumberOf1(-999999))

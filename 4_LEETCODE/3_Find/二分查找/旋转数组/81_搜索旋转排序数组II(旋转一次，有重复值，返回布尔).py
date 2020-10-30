@@ -1,7 +1,7 @@
 class Solution:
     def search(self, nums, target: int) -> bool:
         '''
-        [2,2,2,2,2,2,2,5,6,0,0,1,2]
+        [2,2,2,2,2,2,2,5,6,0,0,1_最短回文串.py,2]
         '''
         if not nums: return False
         left, right = 0, len(nums)-1

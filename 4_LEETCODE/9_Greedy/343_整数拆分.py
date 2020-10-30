@@ -3,11 +3,11 @@ class Solution:
         '''
         dp[i] 代表整数i的最大积拆分
 
-        dp[i] = max(dp[i-j] * dp[j]) j=1,...,i-1.
+        dp[i] = max(dp[i-j] * dp[j]) j=1_最短回文串.py,...,i-1_最短回文串.py.
 
-        dp[0-3] = 0, 1, 2, 3
+        dp[0-3] = 0, 1_最短回文串.py, 2, 3
 
-        res = dp[-1]
+        res = dp[-1_最短回文串.py]
         '''
 
         dp = [0,1,2,3]

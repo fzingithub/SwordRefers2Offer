@@ -5,9 +5,9 @@ class Solution:
 
         dp[i][j] = max(dp[i][k] + dp[k][j]+ nums[i]*num[k]*nums[j]) i<k<j
 
-        dp[i][j]=0  i>=j-1
+        dp[i][j]=0  i>=j-1_最短回文串.py
 
-        res = dp[0][n+1]
+        res = dp[0][n+1_最短回文串.py]
 
         '''
         n = len(nums)

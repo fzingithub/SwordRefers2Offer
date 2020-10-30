@@ -3,25 +3,25 @@ class Solution:
         '''
         dp[i][j] 代表s[:i] p[:j]是否匹配
 
-        dp[i][j] = dp[i-1][j-1]  if s[i] == p[j] or p[j] == '.'  match
+        dp[i][j] = dp[i-1_最短回文串.py][j-1_最短回文串.py]  if s[i] == p[j] or p[j] == '.'  match
                  = dp[i][j-2]              不匹配                                p[j] == '*'
-                 = dp[i-1][j-2]            匹配一个字符      s[i]=p[j−1]          p[j] == '*'
-                 = dp[i-2][j-2]            匹配两个字符     s[i−1]=s[i]=p[j−1]     p[j] == '*'
+                 = dp[i-1_最短回文串.py][j-2]            匹配一个字符      s[i]=p[j−1_最短回文串.py]          p[j] == '*'
+                 = dp[i-2][j-2]            匹配两个字符     s[i−1_最短回文串.py]=s[i]=p[j−1_最短回文串.py]     p[j] == '*'
                  ...
 
                  核心重点：字母 * 星号的组合在匹配的过程中，本质上只会有两种情况：
-                 1. 匹配 s 末尾的一个字符，将该字符扔掉，而该组合还可以继续进行匹配；
+                 1_最短回文串.py. 匹配 s 末尾的一个字符，将该字符扔掉，而该组合还可以继续进行匹配；
                  2. 不匹配字符，将该组合扔掉，不再进行匹配。
 
-        dp[i][j] = dp[i-1][j-1]  if s[i] == p[j] or p[j] == '.'  令为 match(i, j)
-                 = dp[i-1][j] or dp[i][j-2]   if p[j] == '*' and match(i, j-1)
-                 = dp[i][j-2]                 if p[j] == '*' and not match(i, j-1)
+        dp[i][j] = dp[i-1_最短回文串.py][j-1_最短回文串.py]  if s[i] == p[j] or p[j] == '.'  令为 match(i, j)
+                 = dp[i-1_最短回文串.py][j] or dp[i][j-2]   if p[j] == '*' and match(i, j-1_最短回文串.py)
+                 = dp[i][j-2]                 if p[j] == '*' and not match(i, j-1_最短回文串.py)
 
         边界：  dp[0][0] True
                 dp[i][0] False
                 dp[0][j] 分情况讨论了， 连续偶数个 * True p = 'a*.*'
 
-        res = dp[-1][-1]
+        res = dp[-1_最短回文串.py][-1_最短回文串.py]
 
         m = len(s)
         n = len(p)
@@ -74,26 +74,26 @@ class Solution:
         '''
         dp[i][j] 代表s[:i] p[:j]是否匹配
 
-        dp[i][j] = dp[i-1][j-1]  if s[i] == p[j] or p[j] == '.'  match
+        dp[i][j] = dp[i-1_最短回文串.py][j-1_最短回文串.py]  if s[i] == p[j] or p[j] == '.'  match
                  = dp[i][j-2]              不匹配                                p[j] == '*'
-                 = dp[i-1][j-2]            匹配一个字符      s[i]=p[j−1]          p[j] == '*'
-                 = dp[i-2][j-2]            匹配两个字符     s[i−1]=s[i]=p[j−1]     p[j] == '*'
+                 = dp[i-1_最短回文串.py][j-2]            匹配一个字符      s[i]=p[j−1_最短回文串.py]          p[j] == '*'
+                 = dp[i-2][j-2]            匹配两个字符     s[i−1_最短回文串.py]=s[i]=p[j−1_最短回文串.py]     p[j] == '*'
                  ...
 
                  核心重点：字母 * 星号的组合在匹配的过程中，本质上只会有两种情况：
-                 1. 匹配 s 末尾的一个字符，将该字符扔掉，而该组合还可以继续进行匹配；
+                 1_最短回文串.py. 匹配 s 末尾的一个字符，将该字符扔掉，而该组合还可以继续进行匹配；
                  2. 不匹配字符，将该组合扔掉，不再进行匹配。
 
         match(i,j) 索引对应的char是否匹配
-        dp[i][j] = dp[i-1][j-1]  if s[i] == p[j] or p[j] == '.'  令为 match(i, j)
-                 = dp[i-1][j] or dp[i][j-2]   if p[j] == '*' and match(i, j-1)
-                 = dp[i][j-2]                 if p[j] == '*' and not match(i, j-1)
+        dp[i][j] = dp[i-1_最短回文串.py][j-1_最短回文串.py]  if s[i] == p[j] or p[j] == '.'  令为 match(i, j)
+                 = dp[i-1_最短回文串.py][j] or dp[i][j-2]   if p[j] == '*' and match(i, j-1_最短回文串.py)
+                 = dp[i][j-2]                 if p[j] == '*' and not match(i, j-1_最短回文串.py)
 
         边界：  dp[0][0] True
                 dp[i][0] False
                 dp[0][j] 分情况讨论了， 连续偶数个 * True p = 'a*.*'
 
-        res = dp[-1][-1]
+        res = dp[-1_最短回文串.py][-1_最短回文串.py]
 
         空间优化
 		m = len(s)

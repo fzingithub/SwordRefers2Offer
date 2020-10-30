@@ -1,8 +1,8 @@
 class Solution:
     # 动态规划 时间复杂度O(n^2) 空间复杂度O(m*n)
     # dp[i][j] A[0...i] B[0...j] 的最大公共子序列
-    # dp[i+1][j+1] = dp[i][j] + 1 if A[i+1] == B[j+1]
-    #              = max(dp[i][j+1], dp[i+1][j])
+    # dp[i+1_最短回文串.py][j+1_最短回文串.py] = dp[i][j] + 1_最短回文串.py if A[i+1_最短回文串.py] == B[j+1_最短回文串.py]
+    #              = max(dp[i][j+1_最短回文串.py], dp[i+1_最短回文串.py][j])
     def longestCommonSubsequence1(self, text1: str, text2: str) -> int:
 
         if not text1 or not text2:

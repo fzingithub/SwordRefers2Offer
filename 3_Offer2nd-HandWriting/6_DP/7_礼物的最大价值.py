@@ -2,11 +2,11 @@ class Soluton:
     def maxValue(self, grid):
         '''
         dp[i][j] 从(0, 0)走到(i, j) 的最大价值
-        dp[i][j] = max(dp[i-1][j], dp[i][j-1]) + grid[i][j]
+        dp[i][j] = max(dp[i-1_最短回文串.py][j], dp[i][j-1_最短回文串.py]) + grid[i][j]
 
         边界 dp[i][0] = 0 dp[0][i]
 
-        res = dp[-1][-1]
+        res = dp[-1_最短回文串.py][-1_最短回文串.py]
         时间复杂度 O(mn)
         空间      O(mn)
         '''
@@ -24,11 +24,11 @@ class Soluton:
     def maxValue(self, grid):
         '''
         dp[i][j] 从(0, 0)走到(i, j) 的最大价值
-        dp[i][j] = max(dp[i-1][j], dp[i][j-1]) + grid[i][j]
+        dp[i][j] = max(dp[i-1_最短回文串.py][j], dp[i][j-1_最短回文串.py]) + grid[i][j]
 
         边界 dp[i][0] = 0 dp[0][i] = 0
 
-        res = dp[-1][-1]
+        res = dp[-1_最短回文串.py][-1_最短回文串.py]
         时间复杂度 O(mn)
         空间      O(n)
 

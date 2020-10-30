@@ -6,7 +6,7 @@ Created on Mon Jan 21 14:03:49 2019
 
 E-mail: 1194585271@qq.com
 """
-#solution 1：nlogn 排序 记录
+#solution 1_最短回文串.py：nlogn 排序 记录
 class Solution:
     def MoreThanHalfNum_Solution(self, numbers):
         # write code here

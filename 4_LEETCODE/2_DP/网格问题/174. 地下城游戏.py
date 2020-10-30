@@ -8,11 +8,11 @@ class Solution:
         [6, 11, 5]
         [0, 0, 6]
 
-        dp[i][j] = max(min(dp[i+1][j]-grid[i][j], dp[i][j+1]-grid[i][j]), 1)   因为骑士血量至少为 1
+        dp[i][j] = max(min(dp[i+1_最短回文串.py][j]-grid[i][j], dp[i][j+1_最短回文串.py]-grid[i][j]), 1_最短回文串.py)   因为骑士血量至少为 1_最短回文串.py
 
 
         边界： dp[M][j], dp[i][N]= -inf, -inf
-               dp[M-1][N] = 1
+               dp[M-1_最短回文串.py][N] = 1_最短回文串.py
 
         res = dp[0][0]
         '''
@@ -37,13 +37,13 @@ class Solution:
         状态转移： 反向动态规划
         [7, 5, 2]
         [6, 11, 5]
-        [1, 1, 6]
+        [1_最短回文串.py, 1_最短回文串.py, 6]
 
-        dp[i][j] = max(min(dp[i+1][j]-grid[i][j], dp[i][j+1]-grid[i][j]), 1)   因为骑士血量至少为 1
+        dp[i][j] = max(min(dp[i+1_最短回文串.py][j]-grid[i][j], dp[i][j+1_最短回文串.py]-grid[i][j]), 1_最短回文串.py)   因为骑士血量至少为 1_最短回文串.py
 
 
         边界： dp[M][j], dp[i][N]= -inf, -inf
-               dp[M-1][N] = 1
+               dp[M-1_最短回文串.py][N] = 1_最短回文串.py
 
         res = dp[0][0]
 

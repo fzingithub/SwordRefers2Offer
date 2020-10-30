@@ -10,14 +10,14 @@ class Solution:
     def generateTrees(self, n: int):
         '''
         动态规划迭代思路
-        dp[i] 1,..,i 所有的二叉搜索树
+        dp[i] 1_最短回文串.py,..,i 所有的二叉搜索树
 
-        dp[i] = \sum_{k=1}^{i} dp[k-1]dp[i-k]
+        dp[i] = \sum_{k=1_最短回文串.py}^{i} dp[k-1_最短回文串.py]dp[i-k]
 
-        dp[0] = 1   [None]
-        dp[1] = 1   [1]
-        dp[2] = 2   [1, null, 2], [2, 1]
-        dp[3] = 5   [1, null 1, null, 2] [1, null, 2, 1] [2, 1, 3], [3, 1, null, null, 2], [3, 2, null, 1]
+        dp[0] = 1_最短回文串.py   [None]
+        dp[1_最短回文串.py] = 1_最短回文串.py   [1_最短回文串.py]
+        dp[2] = 2   [1_最短回文串.py, null, 2], [2, 1_最短回文串.py]
+        dp[3] = 5   [1_最短回文串.py, null 1_最短回文串.py, null, 2] [1_最短回文串.py, null, 2, 1_最短回文串.py] [2, 1_最短回文串.py, 3], [3, 1_最短回文串.py, null, null, 2], [3, 2, null, 1_最短回文串.py]
         '''
         pass
 

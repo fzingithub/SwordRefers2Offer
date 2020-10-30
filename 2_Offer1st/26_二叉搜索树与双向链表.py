@@ -86,4 +86,4 @@ if __name__ == '__main__':
            return result
 
 
-       deep_flatten([1, [2], [[3], 4], 5])  # [1,2,3,4,5]
+       deep_flatten([1, [2], [[3], 4], 5])  # [1_最短回文串.py,2,3,4,5]

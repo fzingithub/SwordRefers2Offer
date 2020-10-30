@@ -3,8 +3,8 @@ class Solution:
         '''
         方法一： 动态规划
         dp[i][j] 代表 子串s[:i] 与子模式p[:j] 是否匹配
-        dp[i][j] = dp[i-1][j-1]   if s[i]==p[j] or p[j] == '?'
-                 = dp[i][j−1] or dp[i−1][j]  if p[j] = '*'
+        dp[i][j] = dp[i-1_最短回文串.py][j-1_最短回文串.py]   if s[i]==p[j] or p[j] == '?'
+                 = dp[i][j−1_最短回文串.py] or dp[i−1_最短回文串.py][j]  if p[j] = '*'
                  = False   otherwise
         边界： dp[0][0]=True，即当字符串 s 和模式 p 均为空时，匹配成功；
               dp[i][0]=False，即空模式无法匹配非空字符串；

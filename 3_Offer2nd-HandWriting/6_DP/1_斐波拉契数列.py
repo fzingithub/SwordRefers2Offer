@@ -2,7 +2,7 @@ class Solution:
     def fib(self, n):
         '''
         分析：
-        dp[i] = dp[i-1]+dp[i-2]
+        dp[i] = dp[i-1_最短回文串.py]+dp[i-2]
         '''
 
         n0 = 0

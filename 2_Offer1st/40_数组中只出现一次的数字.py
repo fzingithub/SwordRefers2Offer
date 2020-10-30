@@ -7,7 +7,7 @@ Created on Wed Feb 27 09:44:42 2019
 E-mail: 1194585271@qq.com
 """
 
-#解法一： 时间 O(n)， 空间 (1)      用异或的交换律
+#解法一： 时间 O(n)， 空间 (1_最短回文串.py)      用异或的交换律
 class Solution:
     # 返回[a,b] 其中ab是出现一次的两个数字
     def FindNumsAppearOnce(self, array):
@@ -16,7 +16,7 @@ class Solution:
             return
         
         XORF = 0
-        for e in array:   #for finding first bit 1
+        for e in array:   #for finding first bit 1_最短回文串.py
             XORF = XORF ^ e
         
         indexIs1 = self.FindFirstBitIs1(XORF)

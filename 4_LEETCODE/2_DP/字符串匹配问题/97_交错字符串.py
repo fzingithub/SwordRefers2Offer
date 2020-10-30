@@ -7,12 +7,12 @@ class Solution:
         dp[0][j]
         dp[j][0]
 
-        dp[i][j] = dp[i-1][j] if s1[i-1] == s3[i+j-1]
-                 = dp[i][j-1] if s2[j-1] == s3[i+j-1]
-                 = dp[i-1][j] or dp[i][j-1] if s2[j-1] == s1[i-1] == s3[i+j-1]
+        dp[i][j] = dp[i-1_最短回文串.py][j] if s1[i-1_最短回文串.py] == s3[i+j-1_最短回文串.py]
+                 = dp[i][j-1_最短回文串.py] if s2[j-1_最短回文串.py] == s3[i+j-1_最短回文串.py]
+                 = dp[i-1_最短回文串.py][j] or dp[i][j-1_最短回文串.py] if s2[j-1_最短回文串.py] == s1[i-1_最短回文串.py] == s3[i+j-1_最短回文串.py]
 
 
-        res = dp[-1][-1]
+        res = dp[-1_最短回文串.py][-1_最短回文串.py]
         '''
 
         m, n, s = len(s1), len(s2), len(s3)
@@ -55,12 +55,12 @@ class Solution:
         dp[0][j]
         dp[j][0]
 
-        dp[i][j] = dp[i-1][j] if s1[i-1] == s3[i+j-1]
-                 = dp[i][j-1] if s2[j-1] == s3[i+j-1]
-                 = dp[i-1][j] or dp[i][j-1] if s2[j-1] == s1[i-1] == s3[i+j-1]
+        dp[i][j] = dp[i-1_最短回文串.py][j] if s1[i-1_最短回文串.py] == s3[i+j-1_最短回文串.py]
+                 = dp[i][j-1_最短回文串.py] if s2[j-1_最短回文串.py] == s3[i+j-1_最短回文串.py]
+                 = dp[i-1_最短回文串.py][j] or dp[i][j-1_最短回文串.py] if s2[j-1_最短回文串.py] == s1[i-1_最短回文串.py] == s3[i+j-1_最短回文串.py]
 
 
-        res = dp[-1][-1]
+        res = dp[-1_最短回文串.py][-1_最短回文串.py]
         '''
 
         m, n, s = len(s1), len(s2), len(s3)

@@ -38,7 +38,7 @@ class Solution:
         
                     
 
-#解法二，O(m+n) O(1)
+#解法二，O(m+n) O(1_最短回文串.py)
 class Solution1:
     def FindFirstCommonNode(self, pHead1, pHead2):
         # write code here

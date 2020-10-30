@@ -7,7 +7,7 @@ Created on Tue Feb 19 11:17:09 2019
 E-mail: 1194585271@qq.com
 """
 
-#解法一：冒泡思想 O(n^2) O(1)
+#解法一：冒泡思想 O(n^2) O(1_最短回文串.py)
 class Solution:
     def InversePairs(self, data):
         # write code here
