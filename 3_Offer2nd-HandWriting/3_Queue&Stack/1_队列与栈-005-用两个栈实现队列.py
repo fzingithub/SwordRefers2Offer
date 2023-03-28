@@ -1,20 +1,20 @@
 class CQueue:
 
     def __init__(self):
-        self.Stack1 = []  # 入队栈
-        self.Stack2 = []  # 出队栈
+        self.StackIn = []  # 入队栈
+        self.StackOut = []  # 出队栈
 
     def appendTail(self, value):
-        self.Stack1.append(value)
+        self.StackIn.append(value)
 
     def deleteHead(self):
-        if self.Stack2:
-            return self.Stack2.pop()
-        elif self.Stack1:
-            while self.Stack1:
-                self.Stack2.append(self.Stack1.pop())
+        if self.StackOut:
+            return self.StackOut.pop()
+        elif self.StackIn:
+            while self.StackIn:
+                self.StackOut.append(self.StackIn.pop())
 
-            return self.Stack2.pop()
+            return self.StackOut.pop()
         else:
             return -1
 
